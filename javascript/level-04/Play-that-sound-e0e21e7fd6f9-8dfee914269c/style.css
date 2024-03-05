@@ -1,0 +1,15 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
