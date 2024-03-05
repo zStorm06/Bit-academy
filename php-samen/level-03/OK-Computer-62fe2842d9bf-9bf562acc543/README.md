@@ -1,0 +1,2 @@
+Dit is een Steen papier schaar applicatie waardoor je tegen een vriend kan spelen of tegen de computer.
+Om te spelen moet de beginnende speler zijn keuze invoeren, de speler kan daaronder kiezen of hij tegen de computer wilt spelen of tegen een vriend. Als hij tegen de computer speelt, genereert de computer een willekeurig antwoord en wordt er weergegeven wie er heeft gewonnen. Als de speler tegen een andere speler wilt spelen wordt er onder de selectieknoppen een veld weergegeven waar de tweede speler zijn keuze kan invoeren. 

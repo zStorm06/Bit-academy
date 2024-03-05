@@ -1,0 +1,15 @@
+body {
+    background-color: #99A2C9;
+}
+
+.choice {
+    background-color: #99A2C9;
+}
+
+a {
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+}
