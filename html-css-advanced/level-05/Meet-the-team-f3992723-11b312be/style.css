@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.collegas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-size: auto;
+
+}
+
+.collega {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+    width: 25%;
+}
+
+.avatar img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.avatar {
+    width: 80%;
+    
+}
+
+.collega:nth-child(1) img:nth-child(2), .collega:nth-child(2) img:nth-child(2), .collega:nth-child(3) img:nth-child(2) {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+
+.collega:nth-child(1) img:nth-child(2) {
+    object-position: 0%;
+}
+
+
+.collega:nth-child(3) img:nth-child(2) {
+    object-position: 100%;
+}

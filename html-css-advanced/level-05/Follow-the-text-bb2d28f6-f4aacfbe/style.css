@@ -1,0 +1,20 @@
+.icon{
+    display: flex;
+    float: right;
+    top: 0;
+}
+
+.icon:hover+.tooltip-content {
+    display: block;
+    background-color: black;
+    color: white;
+}
+.tooltip-content {
+    position: absolute;
+    display: none;
+}
+
+.tooltip {
+    position: sticky;
+    top: 0;
+}

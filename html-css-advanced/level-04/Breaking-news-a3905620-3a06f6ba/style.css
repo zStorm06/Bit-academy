@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: darkorange;
+}
+
+.content:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.news:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.news:first-child{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#title {
+    text-align: center;
+}
+
+#breaking {
+    order: -1;
+    font-size: 25px;
+}

@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+.img {
+    width: 350px;
+    height: 350px;
+}
+
+.doos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+
+}
+
+.doss {
+    width: 40px;
+    height: 40px;
+}
+
+.reclame2 {
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    width: 250px;
+    height: 600px;
+    flex-shrink: 2;
+    flex-grow: 0;
+    flex-wrap: wrap;
+}
+
+.reclame1 {
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    width: 250px;
+    height: 600px;
+    flex-shrink: 2;
+    flex-grow: 0;
+    flex-wrap: wrap;
+}
