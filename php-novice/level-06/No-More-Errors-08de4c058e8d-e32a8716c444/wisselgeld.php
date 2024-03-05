@@ -1,0 +1,60 @@
+<?php
+
+$input = $argv[1];
+try {
+    if (!isset($input)) {
+        throw new Exception("geen wisselgeld");
+    } elseif (!is_numeric($input)) {
+        throw new Exception("geen wisselgeld");
+    } elseif ($input < 0) {
+        throw new Exception("Input moet een positief getal zijn");
+    }
+
+    $change = (float) $argv[1];
+
+    define(
+        "EUROS",
+        [
+            50 => "euro",
+            20 => "euro",
+            10 => "euro",
+            5 => "euro",
+            2 => "euro",
+            1 => "euro"
+        ]
+    );
+
+    define(
+        "CENTEN",
+        [
+            50 => "cent",
+            20 => "cent",
+            10 => "cent",
+            5 => "cent"
+        ]
+    );
+
+    $change = (round($change / 0.05, 0)) * 0.05;
+    $resteuros = floor($change);
+    $restcenten = ($change - $resteuros) * 100;
+
+    foreach (EUROS as $stacks => $type1) {
+        $resteuros = round($resteuros, 2);
+        if (floor($resteuros / $stacks) > 0) {
+            $times =  floor($resteuros / $stacks);
+            echo "$times x $stacks euro" . PHP_EOL;
+            $resteuros = $resteuros % $stacks;
+        }
+    }
+
+    foreach (CENTEN as $cent => $type2) {
+        $restcenten = round($restcenten, 2);
+        if (floor($restcenten / $cent) > 0) {
+            $times =  floor($restcenten / $cent);
+            echo "$times x $cent cent" . PHP_EOL;
+            $restcenten = $restcenten % $cent;
+        } 
+    }
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
